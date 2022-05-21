@@ -6,6 +6,7 @@ fn main() {
     let include_paths = vec![
         "/usr/include/x86_64-linux-gnu/qt5/",
         "/usr/include/x86_64-linux-gnu/qt5/QtCore",
+        "/usr/include/x86_64-linux-gnu/qt5/QtConcurrent",
         "/usr/include/botan-2",
         "./keepassxc/src",
     ];
