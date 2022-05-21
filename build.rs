@@ -10,10 +10,7 @@ fn main() {
         "./keepassxc/src",
     ];
     // FIXME we should not have to hardcode this.
-    env::set_var(
-        "CPLUS_INCLUDE_PATH",
-        include_paths.join(":"),
-    );
+    env::set_var("CPLUS_INCLUDE_PATH", include_paths.join(":"));
 
     cxx_build::bridge("src/main.rs")
         .file("keepassxc/src/core/ModifiableObject.cpp")
