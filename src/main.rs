@@ -1,8 +1,7 @@
 #[cxx::bridge]
 mod ffi {
     unsafe extern "C++" {
-        // TODO change this when we have a git submodule for keepassxc.
-        include!("../keepassxc/src/core/Database.h");
+        include!("libkdbx-rs/keepassxc/src/core/Database.h");
 
         type Database;
 
@@ -11,5 +10,5 @@ mod ffi {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let database = ffi::new_database("path/to/database.rs");
 }
