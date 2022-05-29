@@ -2,6 +2,10 @@
 
 Rust wrapper for the `libkdbx` library.
 
+The library currently depends on the following other libraries:
+* QT (The `QCore` components `QDateTime`, `QString`, `QUuid`, `QList`, and others are currently used by the core classes.
+* Botan
+
 ## Installing
 
 ```
