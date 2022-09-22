@@ -14,3 +14,6 @@ git submodule update
 // TODO create the config-keepassx.h file in src/core
 cargo build
 ```
+
+## References
+* https://gist.github.com/msmuenchen/9318327
